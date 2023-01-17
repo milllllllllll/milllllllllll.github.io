@@ -1,0 +1,439 @@
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Lato,Arial,sans-serif;
+    color: #000033;
+    background-color: #fff;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h1 {
+	letter-spacing: 5px;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+	font-weight: 300;
+}
+
+.panel {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    margin-bottom: 60px;
+}
+
+.panel-description {
+    margin-left: 0.6rem;
+}
+
+@media(min-width:768px) {
+    p {
+        margin: 0 0 35px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+
+.nowosci-date {
+	margin: 0;
+	padding: 0 0 10px;
+	font-weight: 300;
+	font-size: 14px;
+	color: blue;
+}
+
+.nowosci-text, .oferta-text, .zwierzaki-text {
+	margin: 0;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.nowosci-text {
+	padding: 10px 0px 40px 25px;
+}
+
+.oferta-text {
+	padding: 10px 0px 20px 0px;
+}
+
+.zwierzaki-text {
+	padding: 0px 0px 00px 0px;
+}
+
+.zwierzaki-list {
+	list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+
+.nowosci-header {
+    margin: 0;
+	padding: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.oferta-header {
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+a {
+    color: blue;
+    transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: darkblue;
+}
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 0px solid rgba(255,255,255,.3);
+    text-transform: lowercase;
+    background-color: #fff;
+}
+
+.navbar-custom .navbar-brand {
+    padding: 0px;
+    font-weight: 700;
+    height: 70px;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand .img-responsive-logo {
+    width: 110px; 
+    height: 60px; 
+    transition: size 1s ease-in-out;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #000033;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: #000033;
+}
+
+.navbar-custom .nav li a {
+    transition: background .6s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: #000033;
+    background-color: lightgrey;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+
+.navbar-custom .nav li.active a {
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active a:hover {
+    color: #fff;
+}
+
+@media(min-width:768px) {
+	.thumbnail-text, .nowosci-text, .oferta-text, .zwierzaki-text {
+		padding: 10px 0px 40px 0px;
+	}
+	
+    .navbar-custom {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: #fff 0;
+        transition: background .6s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        background: #fff;
+        height: 60px;
+    }
+
+    .navbar-custom.top-nav-collapse a li a:hover  {
+    	color: #000033;
+    }
+}
+
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #000033;
+    background: url(https://picsum.photos/1200) no-repeat bottom center scroll;
+    background-color: #000;
+    background-size: cover;
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro .intro-body .brand-heading {
+    font-size: 44px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: left;
+	color: #ffffff;
+}
+
+.intro .intro-body .intro-text {
+    font-size: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-align: left;
+	color: #ffffff;
+}
+
+@media(min-width:768px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .intro .intro-body .brand-heading {
+        font-size: 100px;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 34px;
+    }
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 25%!important;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.content-section {
+    padding-top: 60px;
+}
+
+#nowosci {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    text-align: center;
+    color: #000033;
+    background-color: #fff;
+    background-size: cover;
+}
+
+.nowosci-row {
+	padding-bottom: 30px;
+}
+
+@media(min-width:768px) { 
+    #nowosci {
+        height: 100%;
+		width: 100%;
+        padding: 100px;
+    }
+}
+
+img {
+    width: 400px;
+    height: auto;
+    position: relative;
+    border-radius: 6px;
+}
+
+.img-responsive {
+    width: 200px;
+}
+
+.img-responsive.small {
+    width: 100px;
+	height: 100px;
+    border-radius: 0;
+}	
+
+@media(min-width:768px) {
+	img {
+		width: 400px;
+	}
+	
+	.img-responsive {
+		width: 400px;
+        max-width: unset;
+		position: relative;
+	}
+}
+
+#oferta {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #000033;
+    background-color: #f2f2f2;
+}
+
+#zwierzaki {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #000033;
+    background-color: #fff;
+}
+
+#kontakt {
+    display: table;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    color: #000033;
+    background-color: #f2f2f2;
+}
+
+@media(min-width:768px) {
+    #oferta {
+        height: 100%;
+		width: 100%;
+        padding: 100px;
+    }
+
+    #zwierzaki {
+        height: 100%;
+		width: 100%;
+        padding: 100px;
+    }
+
+    #kontakt {
+        height: 100%;
+		width: 100%;
+        padding: 100px;
+    }
+}
+
+@media(min-width:767px) {
+	.list-inline {
+        padding-top: 20px;
+    }
+}
+
+.btn {
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: all .6s ease-in-out;
+}
+
+.btn-default {
+    border: 0px solid #000033;
+    color: #000033;
+    background-color: #d4d7df;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 0px solid #000033;
+    outline: 0;
+    color: #fff;
+    background-color: #000033;
+    transition: background .5s ease-in-out;
+}
+
+.btn.btn-twitter, .btn.btn-facebook, .btn.btn-instagram {
+    border-color: transparent;
+}
+
+ul.banner-social-buttons {
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 0;
+}
+
+footer p {
+	padding: 0 0 0 20px;
+    margin: 0;
+	font-size: 14px;
+}
